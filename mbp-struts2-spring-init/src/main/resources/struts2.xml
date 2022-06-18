@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+<!--
+
+1. <constant> 配置常量
+        name
+        value
+        :可以改变struts2的一些行为，比如UI的样式，编码格式，但是struts2默认是UTF8编码中文也不会乱码。
+
+2. <package> 包，可以把同一个业务模块action和result集中到一个包，方便管理。
+        不同的是，struts2中的包可以继承。比如商品有增删改查操作，订单也有增删改查操作，我们可以将商品和订单的action分别放两个package中，方便管理
+        name 包名，一个struts.xml可以有多个package,通过name属性区分
+        namespace 命名空间，/代表的是根目录。作用类似于SpringMVC中的Controller类上加@RequestMapping注解。
+        extend 继承属性，一般都会继承struts-default,struts-default中定了一许多特性，比如拦截器，参数处理等，如果不继承，struts-default，
+               可能会出现参数无法绑定或找不到action类。
+
+3. <action> 用来处理请求和相应结果
+        name 处理请求的名称，
+        class 处理请求的类，是类的全路径。默认请求会去找execute方法，若不指定class,则默认ActionSupport为处理请求的类
+        result 处理请求的结果
+            name 是action类中返回的字符串，标签的值是要跳转的页面地址（name如果不写，默认是success)
+
+
+-->
+    <!-- 开启debug模式，会自动加载配置文件等等，不用每次更改了配置文件就去重新启动下服务器 -->
+    <constant name="struts.action.extend" value="action,html"></constant>
+    <constant name="struts.devMode" value="true" />
+
+    <package name="test" namespace="/student" extends="struts-default">
+        <action name="show" method="default" class="io.mbp.action.LoginAction">
+            <result name="success">/hello.jsp</result>
+
+        </action>
+
+    </package>
+
+</struts>
