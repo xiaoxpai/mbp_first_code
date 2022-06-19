@@ -27,7 +27,7 @@
 
 -->
     <!-- 开启debug模式，会自动加载配置文件等等，不用每次更改了配置文件就去重新启动下服务器 -->
-    <constant name="struts.action.extend" value="action,html"></constant>
+    <constant name="struts.action.extend" value="action,html"/>
     <constant name="struts.devMode" value="true" />
 
     <package name="test" namespace="/student" extends="struts-default">
