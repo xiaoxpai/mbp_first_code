@@ -9,7 +9,7 @@ public class LoginAction implements Action {
     }
 
     public String execute() throws Exception {
-
+        System.out.println("execute ....");
         return SUCCESS;
     }
 }
