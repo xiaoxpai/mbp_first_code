@@ -13,4 +13,8 @@
 <body>
 <h2>spring-struts2-ExtJS4.1</h2>
 </body>
+<%--加载script文件--%>
+<script type="text/javascript" src="resources/ext-theme-classic/ext-theme-classic-all.css">
+
+</script>
 </html>
