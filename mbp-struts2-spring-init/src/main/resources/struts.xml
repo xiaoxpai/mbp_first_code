@@ -26,16 +26,18 @@
 
 
 -->
-    <!-- 开启debug模式，会自动加载配置文件等等，不用每次更改了配置文件就去重新启动下服务器 -->
-    <constant name="struts.action.extend" value="action,html"/>
-    <constant name="struts.devMode" value="true" />
+        <constant name="struts.devMode" value="false" />
+        <constant name="struts.ognl.allowStaticMethodAccess" value="true"/>
 
-    <package name="test" namespace="/student" extends="struts-default">
-        <action name="show" method="default" class="io.mbp.action.LoginAction">
-            <result name="success">/hello.jsp</result>
+        <!--<constant name="struts.custom.i18n.resources" value="struts"/>-->
+        <package name="default" namespace="" extends="struts-default">
+            <action name="index">
+                <result>/login.jsp</result>
+            </action>
 
-        </action>
-
-    </package>
-
+            <action name="login" class="io.mbp.action.LoginAction" method="login">
+                <result>/home.jsp</result>
+                <result name="input">/login.jsp</result>
+            </action>
+        </package>
 </struts>

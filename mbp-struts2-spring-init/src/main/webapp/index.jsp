@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<!-- 倒入公共类库 -->
-  	<jsp:include page="include.jsp"></jsp:include>
-	<script type="text/javascript" charset="utf-8" src="test.js"></script>
-<title>Weclone Page...</title>
 </head>
 <body>
+<h2>主页面</h2>
+<% response.sendRedirect("index");%>
 </body>
 </html>
