@@ -39,5 +39,8 @@
                 <result>/home.jsp</result>
                 <result name="input">/login.jsp</result>
             </action>
+            <action name="query" class="io.mbp.action.LoginAction" method="query">
+                <result>/show.jsp</result>
+            </action>
         </package>
 </struts>
