@@ -1,5 +1,7 @@
-package actions;
+package io.mbp.action;
 
+ 
+import io.mbp.bean.MessageStore; 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.interceptor.ParameterNameAware;
 import models.MessageStore;
@@ -7,6 +9,10 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import java.util.Map;
 
+/**
+ *  
+ * @struts2 version 2.3.31
+ */
 public class UserAction extends ActionSupport implements SessionAware, ParameterNameAware {
 
     private static final long serialVersionUID = 1L;
