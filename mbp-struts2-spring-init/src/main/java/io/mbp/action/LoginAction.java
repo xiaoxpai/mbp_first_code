@@ -32,4 +32,9 @@ public class LoginAction extends ActionSupport {
         addActionMessage("Login is Successful!");
         return SUCCESS;
     }
+
+    public String register(){
+        addActionMessage("Register is Successful!");
+        return SUCCESS;
+    }
 }

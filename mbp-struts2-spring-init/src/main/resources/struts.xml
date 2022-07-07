@@ -42,5 +42,8 @@
             <action name="query" class="io.mbp.action.LoginAction" method="query">
                 <result>/show.jsp</result>
             </action>
+            <action name="register" class="io.mbp.action.LoginAction" method="query">
+                <result>/register.jsp</result>
+            </action>
         </package>
 </struts>
