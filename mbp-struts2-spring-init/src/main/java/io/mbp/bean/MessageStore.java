@@ -1,3 +1,4 @@
+package io.mbp.bean;
 
 public class MessageStore {
 
