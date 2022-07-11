@@ -4,7 +4,6 @@ package io.mbp.action;
 import io.mbp.bean.MessageStore; 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.interceptor.ParameterNameAware;
-import models.MessageStore;
 import org.apache.struts2.interceptor.SessionAware;
 
 import java.util.Map;
