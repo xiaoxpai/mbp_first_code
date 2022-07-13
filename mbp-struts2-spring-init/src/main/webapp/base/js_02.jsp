@@ -14,7 +14,7 @@
     <script type="text/javascript" charset="utf-8" src="/ext-all-debug.js"></script>
     <!-- 国际化文件 -->
     <script type="text/javascript" charset="utf-8" src="/ext-lang-zh_CN.js"></script>
-    <script type="text/javascript" src="./base/JavaScript_02.js"></script>
+    <script type="text/javascript" src="./base/js_02.js"></script>
 </head>
 <body>
 
