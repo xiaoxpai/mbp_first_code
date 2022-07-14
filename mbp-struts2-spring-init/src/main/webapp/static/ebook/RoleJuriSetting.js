@@ -1,5 +1,6 @@
 /**
  * 角色授權頁面
+ * 此文件只提供参考，根据项目需求制定layout.
  */
 Ext.define('juri.setting.RoleJuriSetting',{
 	extend:'Ext.container.Viewport',
