@@ -8,6 +8,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/mbp-struts2-spring-init/pom.xml" />
+        <option value="$PROJECT_DIR$/mbp-struts2-spring-web/pom.xml" />
       </list>
     </option>
   </component>
